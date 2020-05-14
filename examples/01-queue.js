@@ -43,8 +43,8 @@ class Queue {
             return null;
 
         let strItems = '';
-        for(const item in this.items) {
-            strItems += `${item} `;
+        for(const index in this.items) {
+            strItems += `${this.items[index]} `;
         }
         return strItems;
     }
@@ -55,8 +55,8 @@ const object = new Queue();
 object.enqueue(1);
 object.enqueue(2);
 object.dequeue();
-object.enqueue(3);
-object.enqueue(4);
+object.enqueue('O');
+object.enqueue('a');
 object.dequeue(4);
 console.log(object.peek());
 console.log(object.print());
