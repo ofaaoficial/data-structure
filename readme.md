@@ -4,6 +4,7 @@
 
 ## Queue (Cola | Fila)
 Is a sequence of elements in which the operation of insert (enqueue) is done at one end (`back`) and the operation of extraction (dequeue) for the other (`front`).
+* Mode of access is FIFO - `First in, First out`
 
 ![Queue image](imgs/queue.png)
 
@@ -17,6 +18,19 @@ Is a sequence of elements in which the operation of insert (enqueue) is done at 
 * print
 
 ## Stack (Pila)
+Is an ordered list of data which enables to save and get data
+* Mode of access is LIFO - `Last in, First out`
+ 
+![Stack image](imgs/stack.png)
+
+### Basic methods
+* constructor
+* push
+* pop
+* getSize
+* isEmpty
+* peek
+* print
 
 ## Linked list (Lista enlazada)
 
@@ -25,5 +39,5 @@ Is a sequence of elements in which the operation of insert (enqueue) is done at 
 ## Hash table (Tabla hash)
 
 ## Difference between to array
-The problem is to remove element of array, the array require passing indexation of all elements and it is inefficient.    
+The problem is to remove element of array, the array require passing indexation of all elements, and it is inefficient.    
 
