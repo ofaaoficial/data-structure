@@ -33,6 +33,20 @@ Is an ordered list of data which enables to save and get data
 * print
 
 ## Linked list (Lista enlazada)
+Is a `linear collection` constituted by sequence of `nodes` where they are stored data fields arbitrary and a reference of the next node.
+
+![Linked list image](imgs/linked-list.png)
+
+### Basic methods
+* Node constructor
+* LinkedList constructor
+* add
+* insertAt
+* removeFrom
+* removeElement
+* isEmpty
+* getSize
+* print
 
 ## Doubly Linked List (Lista doblemente enlazada)
 
