@@ -1,5 +1,5 @@
 class Stack {
-    constructor(props) {
+    constructor() {
         this.items = {};
         this.top = 0;
     }
@@ -35,8 +35,9 @@ class Stack {
     }
 
     print() {
-        if (this.isEmpty())
+        if (this.isEmpty()) {
             return null;
+        }
 
         let strItems = '';
         for (const index in this.items) {
@@ -47,15 +48,15 @@ class Stack {
 
 }
 
-const object = new Stack();
-object.push('Oscar');
-object.push('Felipe');
-object.push('Amado');
-console.log(object);
-console.log('pop', object.pop());
-console.log('pop', object.pop());
-console.log('peek', object.peek());
-console.log(object);
-console.log(object.getSize());
-console.log(object.isEmpty());
-console.log(object.print());
+const stack = new Stack();
+stack.push('Oscar');
+stack.push('Felipe');
+stack.push('Amado');
+console.log('all', stack);
+console.log('pop', stack.pop());
+console.log('pop', stack.pop());
+console.log('peek', stack.peek());
+console.log('all', stack);
+console.log('size', stack.getSize());
+console.log('isEmpty', stack.isEmpty());
+console.log('print', stack.print());

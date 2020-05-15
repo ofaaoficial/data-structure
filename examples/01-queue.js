@@ -11,8 +11,9 @@ class Queue {
     }
 
     dequeue() {
-        if (this.front === this.back)
+        if (this.front === this.back) {
             return null;
+        }
 
         const data = this.items[this.front];
         delete this.items[this.front];
@@ -26,24 +27,26 @@ class Queue {
     }
 
     isEmpty() {
-        if (this.getSize() === 0)
+        if (this.getSize() === 0) {
             return true;
+        }
         return false;
     }
 
     peek() {
-        if(this.isEmpty())
+        if (this.isEmpty()) {
             return null;
-
+        }
         return this.items[this.front];
     }
 
     print() {
-        if(this.isEmpty())
+        if (this.isEmpty()) {
             return null;
+        }
 
         let strItems = '';
-        for(const index in this.items) {
+        for (const index in this.items) {
             strItems += `${this.items[index]} `;
         }
         return strItems;
@@ -51,14 +54,14 @@ class Queue {
 
 }
 
-const object = new Queue();
-object.enqueue(1);
-object.enqueue(2);
-object.dequeue();
-object.enqueue('O');
-object.enqueue('a');
-object.dequeue(4);
-console.log(object.peek());
-console.log(object.print());
+const queue = new Queue();
+queue.enqueue(1);
+queue.enqueue(2);
+queue.dequeue();
+queue.enqueue('O');
+queue.enqueue('a');
+queue.dequeue(4);
+console.log('peek', queue.peek());
+console.log('print', queue.print());
 
-console.log(object);
+console.log('all', queue);
