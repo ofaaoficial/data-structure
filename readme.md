@@ -49,6 +49,24 @@ Is a `linear collection` constituted by sequence of `nodes` where they are store
 * print
 
 ## Doubly Linked List (Lista doblemente enlazada)
+Is a structure of data, consisting of set of `nodes sequentially linked`. Every node have `two fields`, called `links`, is reference of the `next node ` and `previous node`
+
+![Doubly linked list image](imgs/double-linked-list.png)
+
+### Basic methods
+* Node constructor
+* LinkedList constructor
+* addToHead
+* addToTail
+* insertAt
+* removeFromHead
+* removeFromTail
+* removeData
+* print
+* printReverse
+* getSize
+* isEmpty
+
 
 ## Hash table (Tabla hash)
 
