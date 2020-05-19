@@ -73,3 +73,5 @@ Is a structure of data, consisting of set of `nodes sequentially linked`. Every 
 ## Difference between to array
 The problem is to remove element of array, the array require passing indexation of all elements, and it is inefficient.    
 
+## License 🔥
+Copyright © 2017-present [Oscar Amado](https://github.com/ofaaoficial) 🧔
